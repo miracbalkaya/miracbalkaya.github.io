@@ -30,194 +30,35 @@
     .section p {
       line-height: 1.5;
     }
-
-    .code-example {
-      background-color: #f8f8f8;
-      border-radius: 4px;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-
-    .code-example pre {
-      margin: 0;
-      font-size: 14px;
-      white-space: pre-wrap;
-    }
   </style>
 </head>
 <body>
   <h1>Java İçerikleri</h1>
 
   <div class="section">
-    <h2><a href="baslangic-seviyesi-java.html">Başlangıç Seviyesi Java</a></h2>
+    <h2><a href="javascript:void(0);" onclick="openPage('baslangic-seviyesi-java.html')">Başlangıç Seviyesi Java</a></h2>
     <p>
       Bu bölümde Java'nın temel kavramlarını ve syntax'ını öğreneceksiniz.
       Değişkenler, döngüler, koşullar, fonksiyonlar gibi temel yapıları ele alacağız.
       Örneklerle destekleyerek konuları daha iyi anlayacaksınız.
     </p>
-
-    <div class="code-example">
-      <pre><code>
-        public class HelloWorld {
-          public static void main(String[] args) {
-            String message = "Merhaba, dünya!";
-            System.out.println(message);
-          }
-        }
-      </code></pre>
-    </div>
   </div>
 
   <div class="section">
-    <h2><a href="nesne-yonelimli-programlama.html">Nesne Yönelimli Programlama (OOP)</a></h2>
+    <h2><a href="javascript:void(0);" onclick="openPage('nesne-yonelimli-programlama.html')">Nesne Yönelimli Programlama (OOP)</a></h2>
     <p>
       Java'nın nesne yönelimli programlama prensiplerini bu bölümde inceleyeceğiz.
       Sınıflar, nesneler, kalıtım, çok biçimlilik gibi OOP kavramlarını ele alarak
       nesne yönelimli programlamanın avantajlarını vurgulayacağız.
     </p>
-
-    <div class="code-example">
-      <pre><code>
-        public class Person {
-          private String name;
-          private int age;
-
-          public Person(String name, int age) {
-            this.name = name;
-            this.age = age;
-          }
-
-          public void sayHello() {
-            System.out.println("Merhaba, ben " + name + ". " + age + " yaşındayım.");
-          }
-        }
-      </code></pre>
-    </div>
   </div>
 
-  <div class="section">
-    <h2><a href="java-api-leri.html">Java API'leri</a></h2>
-    <p>
-      Bu bölümde Java'nın standart kütüphanelerinden (Java API'leri) bahsedeceğiz.
-      String işlemleri, koleksiyonlar (List, Set, Map), dosya işlemleri, veritabanı bağlantısı gibi
-      konuları ele alarak bu API'leri nasıl kullanabileceğinizi öğreneceksiniz.
-    </p>
+  <!-- Diğer bölümler -->
 
-    <div class="code-example">
-      <pre><code>
-        import java.util.ArrayList;
-
-        public class ArrayListExample {
-          public static void main(String[] args) {
-            ArrayList<String> names = new ArrayList<>();
-            names.add("Ali");
-            names.add("Ayşe");
-            names.add("Mehmet");
-
-            for (String name : names) {
-              System.out.println(name);
-            }
-          }
-        }
-      </code></pre>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2><a href="gui-uygulama-gelistirme.html">GUI Uygulama Geliştirme</a></h2>
-    <p>
-      Java Swing veya JavaFX gibi GUI (Grafiksel Kullanıcı Arayüzü) kütüphanelerini kullanarak
-      masaüstü uygulamaları geliştirmeyi bu bölümde ele alacağız.
-      Formlar, düğmeler, etkileşimli bileşenler gibi GUI elemanlarını oluşturmayı ve kullanmayı öğreneceksiniz.
-    </p>
-
-    <div class="code-example">
-      <pre><code>
-        import javax.swing.*;
-
-        public class HelloWorldGUI {
-          public static void main(String[] args) {
-            JFrame frame = new JFrame("Merhaba, Dünya!");
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-            JLabel label = new JLabel("Merhaba, dünya!");
-            frame.getContentPane().add(label);
-
-            frame.pack();
-            frame.setVisible(true);
-          }
-        }
-      </code></pre>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2><a href="web-gelistirme.html">Web Geliştirme</a></h2>
-    <p>
-      Bu bölümde Java EE (Enterprise Edition) veya Spring Framework gibi
-      Java tabanlı web geliştirme teknolojilerini ele alacağız.
-      Servletler, JSP (JavaServer Pages), MVC (Model-View-Controller) mimarisi gibi konulara odaklanarak
-      web uygulamaları geliştirmek için bu teknolojileri nasıl kullanacağınızı öğreneceksiniz.
-    </p>
-
-    <div class="code-example">
-      <pre><code>
-        import javax.servlet.*;
-        import javax.servlet.http.*;
-        import java.io.IOException;
-
-        public class HelloWorldServlet extends HttpServlet {
-          public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-            response.setContentType("text/html");
-            PrintWriter out = response.getWriter();
-            out.println("<html>");
-            out.println("<body>");
-            out.println("<h1>Merhaba, Dünya!</h1>");
-            out.println("</body>");
-            out.println("</html>");
-          }
-        }
-      </code></pre>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2><a href="veritabani-erisimi.html">Veritabanı Erişimi</a></h2>
-    <p>
-      Bu bölümde Java'da veritabanıyla nasıl etkileşim kurabileceğinizi öğreneceksiniz.
-      JDBC (Java Database Connectivity) kullanarak veritabanına bağlanma, sorguları çalıştırma ve
-      sonuçları işleme gibi konuları ele alacağız.
-    </p>
-
-    <div class="code-example">
-      <pre><code>
-        import java.sql.*;
-
-        public class DatabaseExample {
-          public static void main(String[] args) {
-            try {
-              Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydatabase", "username", "password");
-
-              Statement statement = connection.createStatement();
-              ResultSet resultSet = statement.executeQuery("SELECT * FROM customers");
-
-              while (resultSet.next()) {
-                String name = resultSet.getString("name");
-                int age = resultSet.getInt("age");
-                System.out.println("Name: " + name + ", Age: " + age);
-              }
-
-              resultSet.close();
-              statement.close();
-              connection.close();
-            } catch (SQLException e) {
-              e.printStackTrace();
-            }
-          }
-        }
-      </code></pre>
-    </div>
-  </div>
-
+  <script>
+    function openPage(url) {
+      window.open(url, '_blank');
+    }
+  </script>
 </body>
 </html>
