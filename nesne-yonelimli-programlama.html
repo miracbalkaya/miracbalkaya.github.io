@@ -2,13 +2,45 @@
 <html>
 <head>
   <title>Nesne Yönelimli Programlama (OOP)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
   <h1>Nesne Yönelimli Programlama (OOP)</h1>
   <p>
-    Java'nın nesne yönelimli programlama prensiplerini bu bölümde inceleyeceğiz.
-    Sınıflar, nesneler, kalıtım, çok biçimlilik gibi OOP kavramlarını ele alarak
-    nesne yönelimli programlamanın avantajlarını vurgulayacağız.
+    Nesne yönelimli programlama (OOP), programlama paradigmasının bir türüdür. OOP, programları gerçek dünya nesneleriyle ilişkilendirerek düzenlemeye odaklanır. Programı, nesnelere ve nesneler arasındaki ilişkilere dayandırır. Her nesne, verileri (özellikler) ve bu veriler üzerinde işlem yapabilen fonksiyonları (metodlar) içerir. OOP'nin temel prensipleri arasında kalıtım, çok biçimlilik, soyutlama ve kapsülleme bulunur. Kalıtım, bir sınıfın başka bir sınıftan özelliklerini ve davranışlarını devralmasını sağlar. Çok biçimlilik, farklı nesnelerin aynı isimle farklı davranabilmesini sağlar. Soyutlama, detayları gizleyerek sadece gerekli olanlara erişimi sağlar. Kapsülleme, verilerin ve metodların bir araya getirilerek dış etkilere karşı korunmasını sağlar. OOP, yazılımın modülerliğini artırır, tekrar kullanılabilirliği sağlar ve büyük projelerin daha iyi yönetilmesini sağlar. Nesne yönelimli programlama, birçok programlama dilinde kullanılır ve Java gibi dillerde özellikle yaygındır.
   </p>
+  <div class="code-example">
+      <pre><code>
+        public class Person {
+          private String name;
+          private int age;
+
+          public Person(String name, int age) {
+            this.name = name;
+            this.age = age;
+          }
+
+          public void sayHello() {
+            System.out.println("Merhaba, ben " + name + ". " + age + " yaşındayım.");
+          }
+        }
+      </code></pre>
+    </div>
 </body>
 </html>
