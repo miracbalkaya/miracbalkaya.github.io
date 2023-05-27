@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mirac Balkaya'nın Web Sitesi</title>
+  <title>Java İçerikleri</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -10,19 +10,12 @@
       padding: 0;
     }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
     h1 {
-      margin: 0;
-      font-size: 32px;
+      text-align: center;
+      padding: 20px 0;
     }
 
-    main {
+    .section {
       max-width: 800px;
       margin: 20px auto;
       background-color: #fff;
@@ -30,35 +23,201 @@
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 
-    p {
-      color: #777;
+    .section h2 {
+      margin-top: 0;
+    }
+
+    .section p {
       line-height: 1.5;
     }
 
-    footer {
-      background-color: #333;
-      color: #fff;
+    .code-example {
+      background-color: #f8f8f8;
+      border-radius: 4px;
       padding: 10px;
-      text-align: center;
+      margin-bottom: 10px;
     }
 
-    footer p {
+    .code-example pre {
       margin: 0;
+      font-size: 14px;
+      white-space: pre-wrap;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Mirac Balkaya</h1>
-  </header>
+  <h1>Java İçerikleri</h1>
 
-  <main>
-    <h2>Hoş Geldiniz!</h2>
-    <p>Merhaba, ben Mirac Balkaya. Bu web sitesi üzerinde Java ile ilgili yazılar, makaleler ve içerikler paylaşıyorum. Siz de bu alanda gelişmek ve yeni şeyler öğrenmek istiyorsanız, doğru yerdesiniz!</p>
-  </main>
+  <div class="section">
+    <h2>Başlangıç Seviyesi Java</h2>
+    <p>
+      Bu bölümde Java'nın temel kavramlarını ve syntax'ını öğreneceksiniz.
+      Değişkenler, döngüler, koşullar, fonksiyonlar gibi temel yapıları ele alacağız.
+      Örneklerle destekleyerek konuları daha iyi anlayacaksınız.
+    </p>
 
-  <footer>
-    <p>&copy; 2023 Mirac Balkaya. Tüm hakları saklıdır.</p>
-  </footer>
+    <div class="code-example">
+      <pre><code>
+        public class HelloWorld {
+          public static void main(String[] args) {
+            String message = "Merhaba, dünya!";
+            System.out.println(message);
+          }
+        }
+      </code></pre>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Nesne Yönelimli Programlama (OOP)</h2>
+    <p>
+      Java'nın nesne yönelimli programlama prensiplerini bu bölümde inceleyeceğiz.
+      Sınıflar, nesneler, kalıtım, çok biçimlilik gibi OOP kavramlarını ele alarak
+      nesne yönelimli programlamanın avantajlarını vurgulayacağız.
+    </p>
+
+    <div class="code-example">
+      <pre><code>
+        public class Person {
+          private String name;
+          private int age;
+
+          public Person(String name, int age) {
+            this.name = name;
+            this.age = age;
+          }
+
+          public void sayHello() {
+            System.out.println("Merhaba, ben " + name + ". " + age + " yaşındayım.");
+          }
+        }
+      </code></pre>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Java API'leri</h2>
+    <p>
+      Bu bölümde Java'nın standart kütüphanelerinden (Java API'leri) bahsedeceğiz.
+      String işlemleri, koleksiyonlar (List, Set, Map), dosya işlemleri, veritabanı bağlantısı gibi
+      konuları ele alarak bu API'leri nasıl kullanabileceğinizi öğreneceksiniz.
+    </p>
+
+    <div class="code-example">
+      <pre><code>
+        import java.util.ArrayList;
+
+        public class ArrayListExample {
+          public static void main(String[] args) {
+            ArrayList<String> names = new ArrayList<>();
+            names.add("Ali");
+            names.add("Ayşe");
+            names.add("Mehmet");
+
+            for (String name : names) {
+              System.out.println(name);
+            }
+          }
+        }
+      </code></pre>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>GUI Uygulama Geliştirme</h2>
+    <p>
+      Java Swing veya JavaFX gibi GUI (Grafiksel Kullanıcı Arayüzü) kütüphanelerini kullanarak
+      masaüstü uygulamaları geliştirmeyi bu bölümde ele alacağız.
+      Formlar, düğmeler, etkileşimli bileşenler gibi GUI elemanlarını oluşturmayı ve kullanmayı öğreneceksiniz.
+    </p>
+
+    <div class="code-example">
+      <pre><code>
+        import javax.swing.*;
+
+        public class HelloWorldGUI {
+          public static void main(String[] args) {
+            JFrame frame = new JFrame("Merhaba, Dünya!");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+            JLabel label = new JLabel("Merhaba, dünya!");
+            frame.getContentPane().add(label);
+
+            frame.pack();
+            frame.setVisible(true);
+          }
+        }
+      </code></pre>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Web Geliştirme</h2>
+    <p>
+      Bu bölümde Java EE (Enterprise Edition) veya Spring Framework gibi
+      Java tabanlı web geliştirme teknolojilerini ele alacağız.
+      Servletler, JSP (JavaServer Pages), MVC (Model-View-Controller) mimarisi gibi konulara odaklanarak
+      web uygulamaları geliştirmek için bu teknolojileri nasıl kullanacağınızı öğreneceksiniz.
+    </p>
+
+    <div class="code-example">
+      <pre><code>
+        import javax.servlet.*;
+        import javax.servlet.http.*;
+        import java.io.IOException;
+
+        public class HelloWorldServlet extends HttpServlet {
+          public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+            response.setContentType("text/html");
+            PrintWriter out = response.getWriter();
+            out.println("<html>");
+            out.println("<body>");
+            out.println("<h1>Merhaba, Dünya!</h1>");
+            out.println("</body>");
+            out.println("</html>");
+          }
+        }
+      </code></pre>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Veritabanı Erişimi</h2>
+    <p>
+      Bu bölümde Java'da veritabanıyla nasıl etkileşim kurabileceğinizi öğreneceksiniz.
+      JDBC (Java Database Connectivity) kullanarak veritabanına bağlanma, sorguları çalıştırma ve
+      sonuçları işleme gibi konuları ele alacağız.
+    </p>
+
+    <div class="code-example">
+      <pre><code>
+        import java.sql.*;
+
+        public class DatabaseExample {
+          public static void main(String[] args) {
+            try {
+              Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydatabase", "username", "password");
+
+              Statement statement = connection.createStatement();
+              ResultSet resultSet = statement.executeQuery("SELECT * FROM customers");
+
+              while (resultSet.next()) {
+                String name = resultSet.getString("name");
+                int age = resultSet.getInt("age");
+                System.out.println("Name: " + name + ", Age: " + age);
+              }
+
+              resultSet.close();
+              statement.close();
+              connection.close();
+            } catch (SQLException e) {
+              e.printStackTrace();
+            }
+          }
+        }
+      </code></pre>
+    </div>
+  </div>
+
 </body>
 </html>
