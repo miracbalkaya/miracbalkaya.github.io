@@ -1,143 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Web Tasarımı Proje Ödevi</title>
+  <title>Java İçerikleri</title>
   <style>
-    /* CSS kodlarını buraya yazın */
     body {
       font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
       margin: 0;
       padding: 0;
     }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
+    h1 {
       text-align: center;
-    }
-
-    nav {
-      background-color: #f4f4f4;
-      padding: 10px;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    nav ul li {
-      display: inline-block;
-      margin-right: 10px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      padding: 5px;
-    }
-
-    .content {
-      padding: 20px;
+      padding: 20px 0;
     }
 
     .section {
-      margin-bottom: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 
     .section h2 {
-      color: #333;
+      margin-top: 0;
     }
 
     .section p {
-      color: #666;
-    }
-
-    .friend {
-      display: inline-block;
-      width: 200px;
-      margin-right: 20px;
-    }
-
-    .friend img {
-      width: 100%;
-    }
-
-    .friend h3 {
-      margin: 10px 0;
-    }
-
-    .resume {
-      margin-top: 20px;
-    }
-
-    .resume h2 {
-      color: #333;
-    }
-
-    .resume p {
-      color: #666;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Web Tasarımı Proje Ödevi</h1>
-  </header>
+  <h1>Java İçerikleri</h1>
 
-  <nav>
-    <ul>
-      <li><a href="#">Anasayfa</a></li>
-      <li><a href="#">Memleketim</a></li>
-      <li><a href="#">Hobilerim</a></li>
-      <li><a href="#">Arkadaşlarım</a></li>
-      <li><a href="#">Özgeçmiş</a></li>
-    </ul>
-  </nav>
-
-  <div class="content">
-    <div class="section">
-      <h2>Anasayfa</h2>
-      <p>Hoş geldiniz! Bu web sitesi proje ödevi için oluşturuldu.</p>
-    </div>
-
-    <div class="section">
-      <h2>Memleketim</h2>
-      <p>Memleketinizle ilgili bilgileri buraya ekleyin.</p>
-    </div>
-
-    <div class="section">
-      <h2>Hobilerim</h2>
-      <p>Hobilerinizle ilgili bilgileri buraya ekleyin.</p>
-    </div>
-
-    <div class="section">
-      <h2>Arkadaşlarım</h2>
-      <div class="friend">
-        <img src="arkadas1.jpg" alt="Arkadaş 1">
-        <h3>Arkadaş 1</h3>
-        <p>Arkadaşınız hakkında bilgiler burada.</p>
-      </div>
-      <div class="friend">
-        <img src="arkadas2.jpg" alt="Arkadaş 2">
-        <h3>Arkadaş 2</h3>
-        <p>Arkadaşınız hakkında bilgiler burada.</p>
-      </div>
-      <div class="friend">
-        <img src="arkadas3.jpg" alt="Arkadaş 3">
-        <h3>Arkadaş 3</h3>
-        <p>Arkadaşınız hakkında bilgiler burada.</p>
-      </div>
-    </div>
-
-    <div class="section resume">
-      <h2>Özgeçmiş</h2>
-      <p>Özgeçmişinizle ilgili bilgileri buraya ekleyin.</p>
-    </div>
+  <div class="section">
+    <h2><a href="javascript:void(0);" onclick="openPage('baslangic-seviyesi-java.html')">Başlangıç Seviyesi Java</a></h2>
+    <p>
+      Bu bölümde Java'nın temel kavramlarını ve syntax'ını öğreneceksiniz.
+      Değişkenler, döngüler, koşullar, fonksiyonlar gibi temel yapıları ele alacağız.
+      Örneklerle destekleyerek konuları daha iyi anlayacaksınız.
+    </p>
   </div>
+
+  <div class="section">
+    <h2><a href="javascript:void(0);" onclick="openPage('nesne-yonelimli-programlama.html')">Nesne Yönelimli Programlama (OOP)</a></h2>
+    <p>
+      Java'nın nesne yönelimli programlama prensiplerini bu bölümde inceleyeceğiz.
+      Sınıflar, nesneler, kalıtım, çok biçimlilik gibi OOP kavramlarını ele alarak
+      nesne yönelimli programlamanın avantajlarını vurgulayacağız.
+    </p>
+  </div>
+
+  <!-- Diğer bölümler -->
+
+  <script>
+    function openPage(url) {
+      window.open(url, '_blank');
+    }
+  </script>
 </body>
 </html>
